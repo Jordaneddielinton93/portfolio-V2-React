@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Header from '../Header/Header';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header offSetY={offSetY}/>
       <Router>
         <Switch>
 

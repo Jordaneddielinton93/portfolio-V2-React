@@ -3,15 +3,24 @@ import { HeroStyle, HeroSection,HeroSection2, HeroFirstName, HeroSecoundName, He
 import arrowRight from "../Images/arrow.svg"
 import arrowDown from "../Images/arrowdown.svg"
 import {myimage} from "./svgIMG"
+import { useContext } from "react";
+import { PageWrapper } from "../../../../App/App";
 
 
 const Hero = () => {
-  
-  return ( 
-    <HeroStyle>
-      <HeroSection>
 
-        <HeroFirstName>
+let stateObj = useContext(PageWrapper)
+
+  console.log(stateObj)
+  return ( 
+    <HeroStyle
+     DarkTheme={stateObj.state.colourBrown}
+     LightTheme={stateObj.state.colourNaked} >
+      <HeroSection
+      
+      >
+
+        <HeroFirstName >
           <h1>JORDAN</h1>
           <img src={arrowRight} alt="" srcset="" />
         </HeroFirstName>
@@ -31,7 +40,10 @@ const Hero = () => {
 
 
 
-      <HeroSection2 style={{flexDirection:"row"}}>
+      <HeroSection2
+      DarkTheme={stateObj.state.colourBrown}
+      LightTheme={stateObj.state.colourNaked}
+       style={{flexDirection:"row"}}>
         {myimage}
         <div className="circleContainer">
           <div className="circle">Web developer</div>

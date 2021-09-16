@@ -1,22 +1,43 @@
 
+import { useContext } from "react";
+import { ACTIONS } from "../../Reducer/reducer";
+import { PageWrapper } from "../App/App";
 import { NavStyled } from "./Nav.style";
 
 const Nav = () => {
+
+  let stateObj = useContext(PageWrapper)
+  
   return ( 
-    <NavStyled>
+    <NavStyled DarkTheme={stateObj.state.colourBrown}>
       <ol className="nav-list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contacts</li>
+        <li data-testid="Home">Home</li>
+        <li data-testid="About">About</li>
+        <li data-testid="Projects">Projects</li>
+        <li data-testid="Contacts">Contacts</li>
       </ol>
 
       <ol className="nav-list">
-        <li>
-          <button className="dark-theme">Dark Theme</button>
+        <li data-testid="DarkTheme" >
+
+          <button className="dark-theme"
+           onClick={
+            ()=>stateObj.dispatch({
+              type:ACTIONS.CHANGE_COLOUR,payload:"DarkTheme"
+            })
+            }>
+            Dark Theme
+          </button>
         </li>
-        <li>
-          <button className="light-theme">Light Theme</button>
+        <li data-testid="LightTheme" >
+          <button className="light-theme"
+            onClick={
+              ()=>stateObj.dispatch({
+                type:ACTIONS.CHANGE_COLOUR,payload:"LightTheme"
+              })
+              }>
+            Light Theme
+          </button>
         </li>
       </ol>
        

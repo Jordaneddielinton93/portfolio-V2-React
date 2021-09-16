@@ -12,7 +12,7 @@ export const AppStyled = styled.div`
   position: relative;
   width:100vw;
   height: 100vh;
-  background-color: #FBF8F4;
+  background-color: ${(props)=>props.colourNaked};
   overflow-y: scroll;
   
 

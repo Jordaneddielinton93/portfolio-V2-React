@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BrownColor } from "../../../../App/App.style";
+
 export const HeroStyle = styled.main`
   min-height:95vh ;
   width:100% ;
@@ -7,7 +8,7 @@ export const HeroStyle = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: ${BrownColor};
+  color: ${(props)=>props.DarkTheme};
   @keyframes slide1 {
   0%,
   100% {transform: translate(0, 0);}
@@ -58,12 +59,15 @@ export const HeroFirstName = styled.div`
     position: absolute;
     bottom:-10px;
     width: 100%;
-    color: ${BrownColor};
     animation: typing 2s steps(22), blink .5s step-end infinite ;
   }
   & h1 {
     overflow: hidden;
     animation: typing 2s steps(22), blink .5s step-end infinite ;
+  }
+
+  .imageArrow{
+    fill: red;
   }
   
   @media (min-width: 1200px) {
@@ -153,7 +157,10 @@ export const HeroSection2 = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      border: thin solid ${BrownColor};
+      border: thin solid ${(props)=>
+      props.LightTheme==="#FBF8F4"?"#482526":"#1F1F1F"};
+      color: ${(props)=>
+      props.LightTheme==="#FBF8F4"?"#482526":"#1F1F1F"} ;
       height: 90px;
       width: 90px;
       font-size: 1.5rem;
@@ -182,14 +189,14 @@ export const HeroSection2 = styled.section`
 	width: 0;
 	height: 0;
 	border: 30px solid transparent;
-	border-right-color: ${BrownColor};
+	border-right-color: ${(props)=>props.DarkTheme};
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -15px;
 	margin-left: -30px;
 }
     & p{
-      border-right: .15em solid ${BrownColor};
+      border-right: .15em solid ${(props)=>props.DarkTheme};
       max-height: 200px;
       width: 0%;
       opacity: 1;

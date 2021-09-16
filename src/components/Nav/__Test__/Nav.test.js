@@ -1,9 +1,21 @@
 import { render } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
+import { PageWrapper } from "../../App/App"
 import Nav from "../Nav"
+import { NavStyled } from "../Nav.style"
 
 
 test("Check all the Nav buttons are on the page",()=>{
-  let {getByTestId}=render(<Nav/>)
+  const state={
+    colourNaked:"#FBF8F4",
+    colourBrown:"#472425"
+  }
+
+  let {getByTestId}=render(
+    <PageWrapper.Provider value={{state}}> 
+      <Nav/>
+    </PageWrapper.Provider>
+  )
 
   let homeLi = getByTestId("Home")
   let AboutLi = getByTestId("About")
@@ -18,4 +30,28 @@ test("Check all the Nav buttons are on the page",()=>{
   expect(ContactLi).toBeInTheDocument()
   expect(DarkThemeLi).toBeInTheDocument()
   expect(LightThemeLi).toBeInTheDocument()
+})
+
+test("Check Light Theme button change's the color to light",()=>{
+  const state={
+    colourNaked:"#FBF8F4",
+    colourBrown:"#472425"
+  }
+  const dispatch = jest.fn((item)=>item)
+  
+  // ^^ passing the global state down
+  let {getByTestId} = render(
+    <PageWrapper.Provider value={{state,dispatch}}> 
+      <Nav/>
+    </PageWrapper.Provider>
+  )
+
+  let getLightThemeBtn = getByTestId("LightThemeBtn")
+  expect(getLightThemeBtn).toBeInTheDocument()
+
+  userEvent.click(getLightThemeBtn)
+  
+  expect(dispatch).toHaveReturnedWith({"payload": "LightTheme", "type": "CHANGE_COLOUR"})
+  
+  
 })

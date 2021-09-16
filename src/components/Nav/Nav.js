@@ -20,7 +20,8 @@ const Nav = () => {
       <ol className="nav-list">
         <li data-testid="DarkTheme" >
 
-          <button className="dark-theme"
+          <button
+           className="dark-theme"
            onClick={
             ()=>stateObj.dispatch({
               type:ACTIONS.CHANGE_COLOUR,payload:"DarkTheme"
@@ -30,7 +31,10 @@ const Nav = () => {
           </button>
         </li>
         <li data-testid="LightTheme" >
-          <button className="light-theme"
+
+          <button data-testid="LightThemeBtn"
+          
+          className="light-theme"
             onClick={
               ()=>stateObj.dispatch({
                 type:ACTIONS.CHANGE_COLOUR,payload:"LightTheme"

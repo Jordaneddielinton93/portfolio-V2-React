@@ -6,7 +6,7 @@ import {myimage} from "./svgIMG"
 import { useContext } from "react";
 import { PageWrapper } from "../../../../App/App";
 
-
+// important!!! im using styled components that are in the hero.styled.js file
 const Hero = () => {
 
 let stateObj = useContext(PageWrapper)
@@ -16,9 +16,7 @@ let stateObj = useContext(PageWrapper)
     <HeroStyle
      DarkTheme={stateObj.state.colourBrown}
      LightTheme={stateObj.state.colourNaked} >
-      <HeroSection
-      
-      >
+      <HeroSection>
 
         <HeroFirstName >
           <h1>JORDAN</h1>
@@ -37,13 +35,11 @@ let stateObj = useContext(PageWrapper)
 
       </HeroSection>
 
-
-
-
       <HeroSection2
       DarkTheme={stateObj.state.colourBrown}
       LightTheme={stateObj.state.colourNaked}
        style={{flexDirection:"row"}}>
+
         {myimage}
         <div className="circleContainer">
           <div className="circle">Web developer</div>

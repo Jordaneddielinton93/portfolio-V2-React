@@ -1,13 +1,16 @@
+import Hero from "./components/Hero/Hero";
+import { Landing } from "./Landing.style";
+
 const LandingPage = () => {
   return ( 
-    <main>
-
+    <Landing>
+        <Hero/>
 
 
 
 
       
-    </main>
+    </Landing>
    );
 }
  

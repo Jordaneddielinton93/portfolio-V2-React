@@ -20,7 +20,7 @@ const Nav = () => {
       <ol className="nav-list">
         <li data-testid="DarkTheme" >
 
-          <button
+          <button data-testid="DarkThemeBtn"
            className="dark-theme"
            onClick={
             ()=>stateObj.dispatch({

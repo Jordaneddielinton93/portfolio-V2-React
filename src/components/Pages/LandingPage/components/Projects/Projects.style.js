@@ -13,12 +13,15 @@ export let ProjectStyle = styled.main`
       min-height: 100%;
       justify-content: space-between;
       align-items: center;
+      
       & h1,p{
         font-size: 2rem;
         width:370px;
+        color:  ${(props)=>props.DarkTheme};
       }
       & h1{
         margin-top: 60px;
+        
       }
     }
     

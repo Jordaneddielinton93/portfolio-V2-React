@@ -11,8 +11,8 @@ const Phone1 = () => {
         <div className="phoneNotchCamera"></div>
       </div>
       <div className="phoneInnerShell">
-        <div className="screenSaver">Hover Over Me</div>
-        <img 
+        <div className="screenSaver">Hover & scroll</div>
+        <img style={{marginTop:"20px"}}
         className="bikeIMG1"
         srcSet={bikeIMG1}
         alt="bikeimg1" 
@@ -31,8 +31,14 @@ const Phone1 = () => {
          srcSet={bikeIMG5} alt="bikeimg5" width="100%"/>
         
       </div>
+      <div className="phoneButton">
+        Visit here
+      </div>
     </PhoneShellStyle>
    );
 }
  
 export default Phone1;
+
+
+

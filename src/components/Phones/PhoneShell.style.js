@@ -9,6 +9,7 @@ export let PhoneShellStyle = styled.div`
   background-color: #472425;
   border-radius: 30px;
   position: relative;
+  
   .phoneNotch{
     display: flex;
     justify-content: center;
@@ -35,6 +36,7 @@ export let PhoneShellStyle = styled.div`
     border-radius: 15px;
     overflow-y: scroll;
     & .screenSaver{
+      text-align: center;
       height: 95%;
       width: 90%;
       background-color: rgba(0,0,0,0.5);
@@ -70,7 +72,36 @@ export let PhoneShellStyle = styled.div`
     display: none;
   }
   
-        
+  .phoneButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 44px;
+    width: 60%;
+    background-color:#472425 ;
+    bottom: -20px;
+    border-radius: 10px;
+    z-index: 12;
+    font-size: 2rem;
+    color: white;
+    animation: float 6s ease-in-out infinite;
+    cursor: pointer;
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+  }
       
 
 `

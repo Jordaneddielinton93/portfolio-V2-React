@@ -42,7 +42,7 @@ let stateObj = useContext(PageWrapper)
 
         {myimage}
         <div className="circleContainer">
-          <div className="circle">Web developer</div>
+          <div className="circle">Contact Me</div>
           
         </div>
         <article>

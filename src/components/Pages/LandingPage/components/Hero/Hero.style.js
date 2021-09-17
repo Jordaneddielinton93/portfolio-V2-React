@@ -130,7 +130,6 @@ export const HeroSecoundName = styled.div`
 
 export const HeroSection2 = styled.section`
   position: relative;
-
   height:50% ;
   width: 90%;
   display: flex;
@@ -146,13 +145,16 @@ export const HeroSection2 = styled.section`
     position: absolute;
     height: 100px;
     width: 100px;
-    border: thin solid ${BrownColor};
+    border: thin solid ${(props)=>props.DarkTheme};
     border-radius: 100px;
     left: 45% ;
     top: 25%;
     font-size: 1rem;
     text-align: center;
-    background-color:#FBF8F4 ;
+    background-color:#FBF8F4;
+    box-shadow: 0 0 8px ${(props)=>props.DarkTheme}, inset 0 0 8px $${(props)=>props.DarkTheme};
+    animation: pulse 2s linear 1s infinite;
+    
     & .circle{
       display: flex;
       justify-content: center;
@@ -168,9 +170,19 @@ export const HeroSection2 = styled.section`
       -webkit-animation: spin 4s linear infinite ;
       animation: spin 4s linear infinite alternate;
       animation-delay: 6s;
-
+      &:hover{
+        cursor: pointer;
+        background-color:#472425 ;
+        color: whitesmoke;
+      }
 
     }
+  }
+
+  @keyframes pulse {
+  0% { box-shadow:0 0 16px #472425, inset 0 0 8px #472425; }
+  50% { box-shadow:0 0 24px #472425, inset 0 0 14px #472425; }
+  100% { box-shadow:0 0 16px #472425, inset 0 0 8px #472425; }
   }
 
   & article{
@@ -183,28 +195,28 @@ export const HeroSection2 = styled.section`
     margin-top: 50px;
     &:after {
       content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 30px solid transparent;
-	border-right-color: ${(props)=>props.DarkTheme};
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -15px;
-	margin-left: -30px;
-}
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-right-color: ${(props)=>props.DarkTheme};
+      border-left: 0;
+      border-bottom: 0;
+      margin-top: -15px;
+      margin-left: -30px;
+      }
     & p{
       border-right: .15em solid ${(props)=>props.DarkTheme};
       max-height: 200px;
       width: 0%;
       opacity: 1;
       overflow: hidden;
-    animation: typing 2s steps(22), blink .5s step-end infinite;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    white-space: wrap;
+      animation: typing 2s steps(22), blink .5s step-end infinite;
+      animation-delay: 6s;
+      animation-fill-mode: forwards;
+      white-space: wrap;
     }
   }
   & .logoIMG{
@@ -216,6 +228,7 @@ export const HeroSection2 = styled.section`
   
   @media (min-width: 1200px) {
     width: 1100px;
+
     & article{
       font-size: 2rem;
       

@@ -1,13 +1,16 @@
 import Hero from "./components/Hero/Hero";
+import Projects from "./components/Projects/Projects";
+import SliderText from "./components/SliderText/SliderText";
 import { Landing } from "./Landing.style";
 
 const LandingPage = () => {
+
   return ( 
-    <Landing>
+    <Landing onScroll={(e)=>console.log(e)}>
         <Hero/>
-
-
-
+        <SliderText/>
+        <Projects/>
+        <SliderText/>
 
       
     </Landing>

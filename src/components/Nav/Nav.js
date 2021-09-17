@@ -9,12 +9,14 @@ const Nav = () => {
   let stateObj = useContext(PageWrapper)
   
   return ( 
-    <NavStyled DarkTheme={stateObj.state.colourBrown}>
+    <NavStyled
+     DarkTheme={stateObj.state.colourBrown}
+     LightTheme={stateObj.state.colourNaked}>
       <ol className="nav-list">
         <li data-testid="Home">Home</li>
         <li data-testid="About">About</li>
         <li data-testid="Projects">Projects</li>
-        <li data-testid="Contacts">Contacts</li>
+        <li data-testid="Contacts">Contact</li>
       </ol>
 
       <ol className="nav-list">

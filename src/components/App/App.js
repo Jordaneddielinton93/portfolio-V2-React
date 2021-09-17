@@ -21,15 +21,6 @@ import react from "react";
 export let PageWrapper= react.createContext()
 
 function App() {
-// offsetY Is the scroll number
-  const [offSetY,setOffsetY] = useState(0)
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-  useEffect(()=>{
-    window.addEventListener("scroll",handleScroll);
-    return () => window.removeEventListener("scroll",handleScroll);
-  },[])
-  console.log(offSetY)
-
 
 // useReducer for global statechange
   let [state,dispatch]=useReducer(reducer,initstialState)
@@ -37,9 +28,9 @@ function App() {
   console.log(state)
   return (
     <PageWrapper.Provider value={{state,dispatch}}>
-    <AppStyled colourNaked={state.colourNaked}
+    <AppStyled  colourNaked={state.colourNaked}
      className="App">
-      <Nav offSetY={offSetY}/>
+      <Nav/>
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />

@@ -4,16 +4,21 @@ export const NavStyled = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   right: 50px;
   text-align: right;
   font-size: 1.60000vw;
   color: ${(props)=>props.DarkTheme};
+  z-index: 15;
 
   & .nav-list{
     margin-top: 40px;
     line-height: 1.3em;
     cursor: pointer;
+    & li{
+    background: ${(props)=>props.LightTheme};
+
+    }
     & button{
       font-weight: 300;
       width: 100%;

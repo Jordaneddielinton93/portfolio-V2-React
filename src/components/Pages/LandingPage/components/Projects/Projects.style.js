@@ -16,7 +16,7 @@ export let ProjectStyle = styled.main`
       
       & h1,p{
         font-size: 2rem;
-        width:370px;
+        width:277px;
         color:  ${(props)=>props.DarkTheme};
       }
       & h1{

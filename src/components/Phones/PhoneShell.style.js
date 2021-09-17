@@ -9,6 +9,7 @@ export let PhoneShellStyle = styled.div`
   background-color: #472425;
   border-radius: 30px;
   position: relative;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   
   .phoneNotch{
     display: flex;
@@ -25,7 +26,7 @@ export let PhoneShellStyle = styled.div`
       width: 20px;
       height: 20px;
       border-radius: 100px;
-      background-color: black;
+      background-color: silver;
       z-index: 10;
     }
   }

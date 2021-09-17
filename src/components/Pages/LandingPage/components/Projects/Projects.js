@@ -24,19 +24,19 @@ const Projects = () => {
 
       <section style={{marginTop:"100px"}}
         className="box">
-         <h1>Bike Repair....</h1>
-          <p>This was my first client website, built with a team using Firebase Auth with React</p>
+         <h1>Road Map....</h1>
+          <p>This guide is to help beginer developers to their path as a front end dev & or UX-UI designer</p>
           <Phone2/>
           <h1>Road Map....</h1>
-          <p>This guide is to help beginer developers to their path as a front end div & or UX-UI designer</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque harum facere fuga dolore odio. Modi amet voluptatibus fuga maxime quibusdam, corrupti repudiandae voluptatum enim rem unde recusandae, impedit sequi.</p>
           <Phone1/>
       </section>
 
       <section 
         style={{justifyContent:"center"}}
         className="box">
-          <h1>Bike Repair....</h1>
-          <p>This was my first client website, built with a team using Firebase Auth with React</p>
+          <h1>Fetch Foods....</h1>
+          <p>This was my first time using Api’s to create a food recipe generator with vanilla java-script</p>
         <Phone3/>
       </section>
 

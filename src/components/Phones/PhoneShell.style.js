@@ -22,6 +22,7 @@ export let PhoneShellStyle = styled.div`
     top: 0;
     border-radius: 10px;
     z-index: 12;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0px 5px 1px;
     .phoneNotchCamera{
       width: 20px;
       height: 20px;
@@ -41,7 +42,7 @@ export let PhoneShellStyle = styled.div`
       text-align: center;
       height: 95%;
       width: 90%;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.6);
       position: absolute;
       z-index: 5;
       border-radius: 15px;

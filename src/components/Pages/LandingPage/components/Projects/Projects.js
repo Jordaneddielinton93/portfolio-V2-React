@@ -25,12 +25,12 @@ const Projects = () => {
 
       <section style={{marginTop:"100px"}}
         className="box">
-         <h1>Road Map....</h1>
+         <h1>Gro Pro....</h1>
+          <p>Group project 2 was my secound group project learning the basic of React as a team</p>
+          <Phone4/>
+          <h1>Road Map....</h1>
           <p>This guide is to help beginer developers to their path as a front end dev & or UX-UI designer</p>
           <Phone2/>
-          <h1>Road Map....</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque harum facere fuga dolore odio. Modi amet voluptatibus fuga maxime quibusdam, corrupti repudiandae voluptatum enim rem unde recusandae, impedit sequi.</p>
-          <Phone4/>
       </section>
 
       <section 

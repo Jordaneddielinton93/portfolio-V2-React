@@ -4,12 +4,12 @@ import { PageWrapper } from "../../../../App/App";
 import { arrowRightsvg } from "../Images/Arrow";
 import { SliderStyle, SliderWords } from "./Slider.style";
 
-const SliderText = () => {
+const SliderText = ({myworkskill}) => {
 
   let myWorkArrayOfWords=[]
 
   for(let i=0; i<30; i++){
-    myWorkArrayOfWords.push("MY WORK -")
+    myWorkArrayOfWords.push(`${myworkskill }`)
   }
 
   let stateObj = useContext(PageWrapper)

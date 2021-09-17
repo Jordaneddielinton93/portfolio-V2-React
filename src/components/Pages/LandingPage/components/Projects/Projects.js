@@ -19,7 +19,7 @@ const Projects = () => {
         <h1>Bike Repair....</h1>
         <p>This was my first client website, built with a team using Firebase Auth,Storage and Realtime database with the React framework.</p>
         <Phone1/>
-        <h1>Bike Repair....</h1>
+        <h1>Portfolio v1....</h1>
         <p>This was my first client website, built with a team using Firebase Auth with React.</p>
         <Phone5/>
       </section>

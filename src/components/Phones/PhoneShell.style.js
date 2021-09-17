@@ -28,7 +28,6 @@ export let PhoneShellStyle = styled.div`
       border-radius: 100px;
       background-color: silver;
       z-index: 10;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       
     }
   }

@@ -8,9 +8,9 @@ const LandingPage = () => {
   return ( 
     <Landing onScroll={(e)=>console.log(e)}>
         <Hero/>
-        <SliderText/>
+        <SliderText myworkskill={"MY WORK -"}/>
         <Projects/>
-        <SliderText/>
+        <SliderText myworkskill={"MY SKILLS"}/>
 
       
     </Landing>

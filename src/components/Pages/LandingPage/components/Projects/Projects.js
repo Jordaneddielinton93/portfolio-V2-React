@@ -4,6 +4,7 @@ import Phone1 from "../../../../Phones/Phone1/Phone1";
 import Phone2 from "../../../../Phones/Phone2/Phone2";
 import Phone3 from "../../../../Phones/Phone3/Phone3";
 import Phone4 from "../../../../Phones/Phone4/Phone4";
+import Phone5 from "../../../../Phones/Phone5/Phone5";
 import { ProjectStyle } from "./Projects.style";
 
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
         <Phone1/>
         <h1>Bike Repair....</h1>
         <p>This was my first client website, built with a team using Firebase Auth with React</p>
-        <Phone1/>
+        <Phone5/>
       </section>
 
       <section style={{marginTop:"100px"}}

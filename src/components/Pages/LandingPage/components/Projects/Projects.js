@@ -3,6 +3,7 @@ import { PageWrapper } from "../../../../App/App";
 import Phone1 from "../../../../Phones/Phone1/Phone1";
 import Phone2 from "../../../../Phones/Phone2/Phone2";
 import Phone3 from "../../../../Phones/Phone3/Phone3";
+import Phone4 from "../../../../Phones/Phone4/Phone4";
 import { ProjectStyle } from "./Projects.style";
 
 const Projects = () => {
@@ -29,7 +30,7 @@ const Projects = () => {
           <Phone2/>
           <h1>Road Map....</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque harum facere fuga dolore odio. Modi amet voluptatibus fuga maxime quibusdam, corrupti repudiandae voluptatum enim rem unde recusandae, impedit sequi.</p>
-          <Phone1/>
+          <Phone4/>
       </section>
 
       <section 

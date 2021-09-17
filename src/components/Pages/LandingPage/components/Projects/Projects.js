@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { PageWrapper } from "../../../../App/App";
 import Phone1 from "../../../../Phones/Phone1/Phone1";
 import Phone2 from "../../../../Phones/Phone2/Phone2";
+import Phone3 from "../../../../Phones/Phone3/Phone3";
 import { ProjectStyle } from "./Projects.style";
 
 const Projects = () => {
@@ -36,7 +37,7 @@ const Projects = () => {
         className="box">
           <h1>Bike Repair....</h1>
           <p>This was my first client website, built with a team using Firebase Auth with React</p>
-        <Phone1/>
+        <Phone3/>
       </section>
 
     </ProjectStyle>

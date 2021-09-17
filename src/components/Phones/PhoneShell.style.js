@@ -28,6 +28,8 @@ export let PhoneShellStyle = styled.div`
       border-radius: 100px;
       background-color: silver;
       z-index: 10;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      
     }
   }
   .phoneInnerShell{
@@ -88,6 +90,7 @@ export let PhoneShellStyle = styled.div`
     color: white;
     animation: float 6s ease-in-out infinite;
     cursor: pointer;
+    
   @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);

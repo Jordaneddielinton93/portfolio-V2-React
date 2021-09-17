@@ -17,20 +17,20 @@ const Projects = () => {
 
       <section className="box">
         <h1>Bike Repair....</h1>
-        <p>This was my first client website, built with a team using Firebase Auth,Storage and Realtime database with React</p>
+        <p>This was my first client website, built with a team using Firebase Auth,Storage and Realtime database with the React framework.</p>
         <Phone1/>
         <h1>Bike Repair....</h1>
-        <p>This was my first client website, built with a team using Firebase Auth with React</p>
+        <p>This was my first client website, built with a team using Firebase Auth with React.</p>
         <Phone5/>
       </section>
 
       <section style={{marginTop:"100px"}}
         className="box">
          <h1>Gro Pro....</h1>
-          <p>Group project 2 was my secound group project learning the basic of React as a team</p>
+          <p>Group project 2 was my secound group project learning the basic of React as a team.</p>
           <Phone4/>
           <h1>Road Map....</h1>
-          <p>This guide is to help beginer developers to their path as a front end dev & or UX-UI designer</p>
+          <p>This guide is to help beginer developers to their path as a front end dev & or UX-UI designer.</p>
           <Phone2/>
       </section>
 
@@ -38,7 +38,7 @@ const Projects = () => {
         style={{justifyContent:"center"}}
         className="box">
           <h1>Fetch Foods....</h1>
-          <p>This was my first time using Api’s to create a food recipe generator with vanilla java-script</p>
+          <p>This was my first time using Api’s to create a food recipe generator with vanilla java-script.</p>
         <Phone3/>
       </section>
 

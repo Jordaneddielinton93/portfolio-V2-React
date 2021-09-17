@@ -18,9 +18,15 @@ export let ProjectStyle = styled.main`
         font-size: 2rem;
         width:277px;
         color:  ${(props)=>props.DarkTheme};
+        margin-top: 30px;
       }
       & h1{
-        margin-top: 60px;
+        
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+
         
       }
     }

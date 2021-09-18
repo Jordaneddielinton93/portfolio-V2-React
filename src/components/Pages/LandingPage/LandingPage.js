@@ -1,3 +1,4 @@
+import HardSkills from "./components/HardSkills/HardSkills";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import SliderText from "./components/SliderText/SliderText";
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <SliderText myworkskill={"MY WORK -"}/>
         <Projects/>
         <SliderText myworkskill={"MY SKILLS"}/>
+        <HardSkills/>
     </Landing>
    );
 }

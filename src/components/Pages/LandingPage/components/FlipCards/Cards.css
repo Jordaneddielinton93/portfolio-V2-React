@@ -1,0 +1,48 @@
+.cards{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.cards-icon{
+  height: 25%;
+  font-size: 3rem;
+  z-index: 2;
+  color: aliceblue;
+
+}
+
+.cards img{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50%;
+}
+
+
+.cardsBack{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 0.5rem;
+  background-color:#79BA8B ;
+  box-shadow: rgba(50, 50, 93, 0.25) 10px 23px 37px -15px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cardsBack__Descritption{
+  padding: 0 10px;
+}
+
+.letsExplore-btn{
+  width: 128px;
+}

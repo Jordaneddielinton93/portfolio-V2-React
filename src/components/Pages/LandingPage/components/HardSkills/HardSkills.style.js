@@ -4,6 +4,6 @@ export const HardSkillStyle = styled.main`
 display: flex;
 flex-wrap: wrap;
   min-height: 500px;
-  height: 800px;
+  height: 450px;
   width: 100%;
 `

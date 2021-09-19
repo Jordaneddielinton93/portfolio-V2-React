@@ -11,7 +11,7 @@ const LandingPage = () => {
         <Hero/>
         <SliderText myworkskill={"MY WORK -"}/>
         <Projects/>
-        <SliderText myworkskill={"MY SKILLS"}/>
+        <SliderText myworkskill={"MY SKILLS"} />
         <HardSkills/>
     </Landing>
    );

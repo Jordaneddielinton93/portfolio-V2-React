@@ -51,7 +51,7 @@ export const CardStyle = styled.div`
   background-color:#FBF8F4 ;
 
   &:hover{
-    animation: hithere 1s ease infinite;
+    animation: hithere 1s ease forwards;
     cursor: pointer;
     @keyframes hithere {
       30% { transform: scale(1.2); }
@@ -67,14 +67,25 @@ export const CardStyle = styled.div`
       70% { transform: rotate(0deg) scale(1.1); }
       100% { transform: scale(1); }
     }
-    & #cloud2,#cloud3,#box1sass{
-    animation: wiggle 1s ease infinite;
+    & #cloud2,#cloud3{
+    animation: wiggle 1.1s ease infinite;
 
     }
-    & #Vector_22,#box2sass,#writing1,#writing3{
-    animation: wiggle 1.1s ease-in-out infinite;
+    & #writing1,#writing3,#box2sass,#cloud2,#cloud3{
+    animation: hinge 1.1s ease-in-out forwards;
 
     }
+
+    #Vector_30,#Vector_31,#Vector_32,#Vector_33,#Vector_34,#Vector_35,#Vector_36,#Vector_37,#Vector_38,#Vector_39,#Vector_40,#box1sass,#Vector_22,#arrowjs,#cloud1,#Vector_18,#Vector,.armss{
+  animation: hinge 2s ease forwards ;
+}
+@keyframes hinge {
+  0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  20%, 60% { transform: rotate(4deg); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  40% { transform: rotate(6deg); transform-origin: top left; animation-timing-function: ease-in-out; } 
+  80% { transform: rotate(3deg) translateY(0);  transform-origin: top left; animation-timing-function: ease-in-out; } 
+  100% { transform: translateY(190px);  }
+}
   }
 
   & .cardTitle{

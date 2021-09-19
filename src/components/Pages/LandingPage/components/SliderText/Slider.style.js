@@ -5,6 +5,7 @@ export const SliderStyle = styled.div`
   overflow-x: hidden;
   position: relative;
   height: 12.7vw;
+  margin: 170px 0
 `
 
 export const SliderWords = styled.div`

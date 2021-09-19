@@ -71,7 +71,7 @@ export const CardStyle = styled.div`
     animation: wiggle 1s ease infinite;
 
     }
-    & #Vector_22,#box2sass{
+    & #Vector_22,#box2sass,#writing1,#writing3{
     animation: wiggle 1.1s ease-in-out infinite;
 
     }

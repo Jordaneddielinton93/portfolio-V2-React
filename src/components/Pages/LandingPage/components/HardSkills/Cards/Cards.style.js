@@ -71,12 +71,12 @@ export const CardStyle = styled.div`
     animation: wiggle 1.1s ease infinite;
 
     }
-    & #writing1,#writing3,#box2sass,#cloud2,#cloud3{
+    & #writing1,#writing3,#box2sass,#cloud2,#cloud3,.armss{
     animation: hinge 1.1s ease-in-out forwards;
 
     }
 
-    #Vector_30,#Vector_31,#Vector_32,#Vector_33,#Vector_34,#Vector_35,#Vector_36,#Vector_37,#Vector_38,#Vector_39,#Vector_40,#box1sass,#Vector_22,#arrowjs,#cloud1,#Vector_18,#Vector,.armss{
+    #Vector_30,#Vector_31,#Vector_32,#Vector_33,#Vector_34,#Vector_35,#Vector_36,#Vector_37,#Vector_38,#Vector_39,#Vector_40,#box1sass,#Vector_22,#arrowjs,#cloud1,#Vector_18,#Vector{
   animation: hinge 2s ease forwards ;
 }
 @keyframes hinge {

@@ -7,3 +7,6 @@ export const Landing = styled.div`
   flex-direction: column;
   
 `
+
+
+

@@ -6,6 +6,9 @@ export const SliderStyle = styled.div`
   position: relative;
   height: 12.7vw;
   margin: 170px 0;
+  @media only screen and (max-width: 800px) {
+    margin:20px 0px
+  }
 `
 
 export const SliderWords = styled.div`

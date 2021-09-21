@@ -27,6 +27,13 @@ export const HeroStyle = styled.main`
     width: 100%; 
     opacity:1 }
 }
+
+@media only screen and (max-width: 700px) {
+  min-height:70vh ;
+}
+@media only screen and (max-width: 500px) {
+  min-height:50vh ;
+}
 `
 
 export const HeroSection = styled.section`
@@ -70,8 +77,12 @@ export const HeroFirstName = styled.div`
     fill: red;
   }
   
-  @media (min-width: 1200px) {
+  @media (max-width: 750px) {
     /* font-size: 5rem; */
+    & img{
+      display: none;
+      
+    }
   }
 `
 
@@ -97,8 +108,12 @@ export const HeroMiddleName = styled.div`
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
-  @media (min-width: 1200px) {
+  @media (max-width: 750px) {
     /* font-size: 5rem; */
+    & img{
+      display: none;
+      
+    }
   }
 `
 
@@ -107,6 +122,7 @@ export const HeroSecoundName = styled.div`
   width: 40%;
   display: flex;
   align-self: flex-end;
+  max-height: 100%;
   & img{
     object-fit: contain;
     animation: slide1 1s ease-in-out infinite;
@@ -118,12 +134,11 @@ export const HeroSecoundName = styled.div`
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
-  @media (min-width: 1200px) {
+  @media (max-width: 750px) {
     /* font-size: 5rem; */
     & img{
-      max-height: 100%;
-    
-
+      display: none;
+      
     }
   }
 `
@@ -137,14 +152,13 @@ export const HeroSection2 = styled.section`
   justify-content: flex-end;
   align-items: center;
   font-size: 7.04167vw;
-
   & .circleContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 10.04167vw;
+    width: 10.04167vw;
     border: thin solid ${(props)=>props.DarkTheme};
     border-radius: 100px;
     left: 45% ;
@@ -154,7 +168,10 @@ export const HeroSection2 = styled.section`
     background-color:#FBF8F4;
     box-shadow: 0 0 8px ${(props)=>props.DarkTheme}, inset 0 0 8px $${(props)=>props.DarkTheme};
     animation: pulse 2s linear 1s infinite;
-    
+    @media only screen and (max-width: 800px) {
+        left:40% ;
+        top: 70%;
+      }
     & .circle{
       display: flex;
       justify-content: center;
@@ -163,9 +180,9 @@ export const HeroSection2 = styled.section`
       props.LightTheme==="#FBF8F4"?"#482526":"#1F1F1F"};
       color: ${(props)=>
       props.LightTheme==="#FBF8F4"?"#482526":"#1F1F1F"} ;
-      height: 90px;
-      width: 90px;
-      font-size: 1.5rem;
+      height: 10.04167vw;
+      width: 10.04167vw;
+      font-size: 3.04167vw;
       border-radius: 100px;
       -webkit-animation: spin 4s linear infinite ;
       animation: spin 4s linear infinite alternate;
@@ -175,7 +192,6 @@ export const HeroSection2 = styled.section`
         background-color:#472425 ;
         color: whitesmoke;
       }
-
     }
   }
 
@@ -193,6 +209,13 @@ export const HeroSection2 = styled.section`
     padding: 10px;
     border: thin solid ;
     margin-top: 50px;
+    @media only screen and (max-width: 700px) {
+      
+        & p{
+          max-height: 400px;
+        }
+        
+      }
     &:after {
       content: '';
       position: absolute;
@@ -225,16 +248,7 @@ export const HeroSection2 = styled.section`
     max-height: 100%;
     
   }
-  
-  @media (min-width: 1200px) {
-    width: 1100px;
 
-    & article{
-      font-size: 2rem;
-      
-      
-    } 
-  }
   
 `
 

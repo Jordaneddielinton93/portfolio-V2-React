@@ -36,7 +36,11 @@ export const ContainerStyle = styled.div`
       transform: translateX(0);
     }
   }
-
+  @media only screen and (max-width: 950px) {
+    width: 50%;
+    height: 500px;
+  }
+  
   
 `
 
@@ -108,4 +112,17 @@ export const CardStyle = styled.div`
       min-height: 100%;
     }
   }
+
+  @media only screen and (max-width: 1200px) {
+    width: 200px;
+    height: 60%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 150px;
+    height: 60%;
+    & .cardTitle,.cardTitle2{
+      font-size: 1.5rem;
+    }
+  }
+  
 `

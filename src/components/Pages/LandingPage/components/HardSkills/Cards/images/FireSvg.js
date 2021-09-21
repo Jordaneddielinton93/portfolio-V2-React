@@ -1,4 +1,4 @@
-export const FireSvg = <svg width="195" height="139" viewBox="0 0 195 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const FireSvg = <svg width="100%" height="139" viewBox="0 0 195 139" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="FireBase">
 <path id="Vector" d="M163.028 34.7028C169.978 34.7028 175.612 29.0854 175.612 22.156C175.612 15.2265 169.978 9.60913 163.028 9.60913C156.079 9.60913 150.445 15.2265 150.445 22.156C150.445 29.0854 156.079 34.7028 163.028 34.7028Z" fill="#2F2E41"/>
 <path id="Vector_2"className="armss" d="M168.763 32.0029H164.94V38.8322H168.763V32.0029Z" fill="#2F2E41"/>

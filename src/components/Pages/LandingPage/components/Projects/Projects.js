@@ -36,7 +36,7 @@ const Projects = () => {
 
       <section 
         style={{justifyContent:"center"}}
-        className="box">
+        className="box box_3">
           <h1>Fetch Foods....</h1>
           <p>This was my first time using Api’s to create a food recipe generator with vanilla java-script.</p>
         <Phone3/>

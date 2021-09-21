@@ -10,7 +10,10 @@ export let PhoneShellStyle = styled.div`
   border-radius: 30px;
   position: relative;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  
+  @media only screen and (max-width: 1050px) {
+    width: 200px;
+    height: 400px;
+  }
   
   .phoneNotch{
     display: flex;

@@ -1,4 +1,4 @@
-export const JSimg = <svg width="219" height="141" viewBox="0 0 219 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const JSimg = <svg width="100%" height="141" viewBox="0 0 219 141" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="javascriptIMG">
 <g id="Group 2">
 <path id="Rectangle 1" d="M218.879 0.124146H0.09375V140.244H218.879V0.124146Z" fill="#E6E6E6"/>

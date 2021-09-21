@@ -13,12 +13,20 @@ export let ProjectStyle = styled.main`
       min-height: 100%;
       justify-content: space-between;
       align-items: center;
-      
+  
       & h1,p{
         font-size: 2rem;
         width:277px;
         color:  ${(props)=>props.DarkTheme};
         margin-top: 20px;
+        @media only screen and (max-width: 1050px) {
+          width: 200px;
+          font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 750px) {
+          width: 120px;
+          font-size: 1rem;
+        }
       }
       & h1{
         margin-top: 70px;
@@ -28,7 +36,16 @@ export let ProjectStyle = styled.main`
         text-align: center;
       }
     }
-    
+    & .box_3{
+      
+    }
+    @media only screen and (max-width: 750px) {
+      & .box_3{
+        display: none;
+        }
+        justify-content: space-evenly;
+    }
+         
     
 
 `

@@ -46,6 +46,7 @@ export const NavStyled = styled.nav`
     }
   }
   @media only screen and (max-width: 700px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    top:70px;
   }
 `

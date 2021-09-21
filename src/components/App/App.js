@@ -16,20 +16,26 @@ import LandingPage from "../Pages/LandingPage/LandingPage";
 import { initstialState, reducer } from "../../Reducer/reducer";
 import react from "react";
 import ContactPage from "../Pages/ContactPage/ContactPage";
+import Footer from "./Footer/Footer";
+
 
 
 
 export let PageWrapper= react.createContext()
 
 function App() {
+  
 
 // useReducer for global statechange
   let [state,dispatch]=useReducer(reducer,initstialState)
 
+  
   console.log(state)
   return (
     <PageWrapper.Provider value={{state,dispatch}}>
-    <AppStyled  colourNaked={state.colourNaked}
+    <AppStyled  
+    colourNaked={state.colourNaked}
+    
      className="App">
       
       <Router>
@@ -37,8 +43,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/Contact" component={ContactPage} />
-          
         </Switch>
+        
       </Router>
     </AppStyled>
     </PageWrapper.Provider>

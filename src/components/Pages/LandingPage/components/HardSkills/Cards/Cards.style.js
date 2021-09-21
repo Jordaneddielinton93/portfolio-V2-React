@@ -94,6 +94,12 @@ export const CardStyle = styled.div`
     text-align: center;
     border-bottom: thin solid #472425;
   }
+  & .cardTitle2{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    border-top: thin solid #472425;
+  }
   & .cardImg{
     height: 90%;
     display: flex;

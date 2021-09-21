@@ -5,12 +5,13 @@ import arrowDown from "../Images/arrowdown.svg"
 import {myimage} from "./svgIMG"
 import { useContext } from "react";
 import { PageWrapper } from "../../../../App/App";
+import { useHistory } from "react-router";
 
 // important!!! im using styled components that are in the hero.styled.js file
 const Hero = () => {
 
 let stateObj = useContext(PageWrapper)
-
+let history = useHistory();
   console.log(stateObj)
   return ( 
     <HeroStyle
@@ -41,7 +42,7 @@ let stateObj = useContext(PageWrapper)
        style={{flexDirection:"row"}}>
 
         {myimage}
-        <div className="circleContainer">
+        <div className="circleContainer" onClick={()=>history.push("/Contact")}>
           <div className="circle">Contact Me</div>
           
         </div>

@@ -59,11 +59,11 @@ export const HeroFirstName = styled.div`
     position: absolute;
     bottom:-10px;
     width: 100%;
-    animation: typing 2s steps(22), blink .5s step-end infinite ;
+    animation: typing 1s steps(22), blink .5s step-end infinite ;
   }
   & h1 {
     overflow: hidden;
-    animation: typing 2s steps(22), blink .5s step-end infinite ;
+    animation: typing 1s steps(22), blink .5s step-end infinite ;
   }
 
   .imageArrow{
@@ -86,15 +86,15 @@ export const HeroMiddleName = styled.div`
     overflow: hidden;
     position: absolute;
     bottom:-10px;
-    animation: typing 2s steps(22), blink .5s step-end infinite ;
-    animation-delay: 2s;
+    animation: typing 1s steps(22), blink .5s step-end infinite ;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
   & h1 {
     width: 0%;
     overflow: hidden;
-    animation: typing 2s steps(22), blink .5s step-end infinite;
-    animation-delay: 2s;
+    animation: typing 1s steps(22), blink .5s step-end infinite;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
   @media (min-width: 1200px) {
@@ -114,8 +114,8 @@ export const HeroSecoundName = styled.div`
   & h1 {
     width: 0%;
     overflow: hidden;
-    animation: typing 2s steps(22), blink .5s step-end infinite;
-    animation-delay: 4s;
+    animation: typing 1s steps(22), blink .5s step-end infinite;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
   @media (min-width: 1200px) {
@@ -169,7 +169,7 @@ export const HeroSection2 = styled.section`
       border-radius: 100px;
       -webkit-animation: spin 4s linear infinite ;
       animation: spin 4s linear infinite alternate;
-      animation-delay: 6s;
+      animation-delay: 4s;
       &:hover{
         cursor: pointer;
         background-color:#472425 ;
@@ -213,8 +213,8 @@ export const HeroSection2 = styled.section`
       width: 0%;
       opacity: 1;
       overflow: hidden;
-      animation: typing 2s steps(22), blink .5s step-end infinite;
-      animation-delay: 6s;
+      animation: typing 1s steps(22), blink .5s step-end infinite;
+      animation-delay: 3s;
       animation-fill-mode: forwards;
       white-space: wrap;
     }

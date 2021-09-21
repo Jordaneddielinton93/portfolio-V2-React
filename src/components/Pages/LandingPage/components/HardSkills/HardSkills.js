@@ -9,10 +9,22 @@ const HardSkills = () => {
 
   return ( 
     <HardSkillStyle >
-      <CardContainers title={"REACT"} img={ReactSvg}/>
-      <CardContainers title={"SASS/Styled Comps"}img={CssImg}  />
-      <CardContainers title={"JAVASCRIPT"} img={JSimg}/>
-      <CardContainers title={"Firebase"} img={FireSvg}/>
+      <CardContainers 
+         title={"REACT"}
+         title2={"React Testing Lib"}
+        img={ReactSvg}/>
+      <CardContainers
+        title={"SASS/Styled Comps"}
+        title2={"Css"}
+        img={CssImg}  />
+      <CardContainers
+        title={"JAVASCRIPT"}
+        title2={"Figma"}
+        img={JSimg}/>
+      <CardContainers
+        title={"Firebase"}
+        title2={"Photoshop"}
+        img={FireSvg}/>
 
     </HardSkillStyle>
    );

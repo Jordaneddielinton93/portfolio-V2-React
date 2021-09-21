@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CardStyle, ContainerStyle } from "./Cards.style";
 import { PageWrapper } from "../../../../../App/App";
 
-const CardContainers = ({title,img}) => {
+const CardContainers = ({title,title2,img}) => {
   let stateObj = useContext(PageWrapper)
 
   return ( 
@@ -15,6 +15,7 @@ const CardContainers = ({title,img}) => {
         <section className="cardImg">
           {img}
         </section>
+        <h1 className="cardTitle2">{title2}</h1>
       </CardStyle>
     </ContainerStyle>
    );

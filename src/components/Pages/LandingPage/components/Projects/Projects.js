@@ -15,7 +15,7 @@ const Projects = () => {
      LightTheme={stateObj.state.colourNaked}
      displayFlex={""}>
 
-      <section className="box">
+      <section className="box" >
         <h1>Bike Repair....</h1>
         <p>This was my first client website, built with a team using Firebase Auth,Storage and Realtime database with the React framework.</p>
         <Phone1/>

@@ -11,6 +11,7 @@ export let PhoneShellStyle = styled.div`
   position: relative;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   
+  
   .phoneNotch{
     display: flex;
     justify-content: center;
@@ -38,6 +39,7 @@ export let PhoneShellStyle = styled.div`
     background-color: whitesmoke;
     border-radius: 15px;
     overflow-y: scroll;
+    
     & .screenSaver{
       text-align: center;
       height: 95%;

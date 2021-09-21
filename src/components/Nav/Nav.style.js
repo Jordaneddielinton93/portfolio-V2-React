@@ -10,7 +10,9 @@ export const NavStyled = styled.nav`
   font-size: 1.60000vw;
   color: ${(props)=>props.DarkTheme};
   z-index: 15;
-
+  & a{
+  color: ${(props)=>props.DarkTheme};
+  }
   & .nav-list{
     margin-top: 40px;
     line-height: 1.3em;

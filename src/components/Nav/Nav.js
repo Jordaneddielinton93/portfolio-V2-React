@@ -1,5 +1,6 @@
 
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ACTIONS } from "../../Reducer/reducer";
 import { PageWrapper } from "../App/App";
 import { NavStyled } from "./Nav.style";
@@ -13,10 +14,14 @@ const Nav = () => {
      DarkTheme={stateObj.state.colourBrown}
      LightTheme={stateObj.state.colourNaked}>
       <ol className="nav-list">
-        <li data-testid="Home">Home</li>
+        <li data-testid="Home">
+          <Link to="/">Home</Link>
+        </li>
         <li data-testid="About">About</li>
         <li data-testid="Projects">Projects</li>
-        <li data-testid="Contacts">Contact</li>
+        <li data-testid="Contacts">
+          <Link to="/Contact">Contact</Link>
+        </li>
       </ol>
 
       <ol className="nav-list">

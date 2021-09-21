@@ -15,6 +15,7 @@ import {
 import LandingPage from "../Pages/LandingPage/LandingPage";
 import { initstialState, reducer } from "../../Reducer/reducer";
 import react from "react";
+import ContactPage from "../Pages/ContactPage/ContactPage";
 
 
 
@@ -30,10 +31,12 @@ function App() {
     <PageWrapper.Provider value={{state,dispatch}}>
     <AppStyled  colourNaked={state.colourNaked}
      className="App">
-      <Nav/>
+      
       <Router>
+      <Nav/>
         <Switch>
           <Route exact path="/" component={LandingPage} />
+          <Route path="/Contact" component={ContactPage} />
           
         </Switch>
       </Router>

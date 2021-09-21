@@ -5,9 +5,9 @@ export const NavStyled = styled.nav`
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  right: 50px;
+  right: 25px;
   text-align: right;
-  font-size: 1.60000vw;
+  font-size: 1.90000vw;
   color: ${(props)=>props.DarkTheme};
   z-index: 15;
   & a{
@@ -31,6 +31,9 @@ export const NavStyled = styled.nav`
       &:hover{
         border-bottom: thick solid ${(props)=>props.DarkTheme};
       }
+      @media only screen and (max-width: 700px) {
+        font-size: 1rem;
+      }
     }
     & .dark-theme{
       color: ${(props)=>props.DarkTheme};
@@ -41,5 +44,8 @@ export const NavStyled = styled.nav`
       opacity: 0.6;
       color: ${(props)=>props.DarkTheme};
     }
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 1rem;
   }
 `

@@ -1,8 +1,10 @@
+import { AboutPageStyle } from "./AboutMe.style";
+
 const AboutMePage = () => {
   return ( 
-    <div>
-      
-    </div>
+    <AboutPageStyle>
+      about page
+    </AboutPageStyle>
    );
 }
  

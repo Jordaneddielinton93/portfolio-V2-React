@@ -12,6 +12,9 @@ export const NavStyled = styled.nav`
   z-index: 15;
   & a{
   color: ${(props)=>props.DarkTheme};
+  &:hover{
+        border-bottom: thick solid ${(props)=>props.DarkTheme};
+      }
   }
   & .nav-list{
     margin-top: 40px;
@@ -19,7 +22,7 @@ export const NavStyled = styled.nav`
     cursor: pointer;
     & li{
     background: ${(props)=>props.LightTheme};
-
+    
     }
     & button{
       font-weight: 300;
@@ -37,11 +40,11 @@ export const NavStyled = styled.nav`
     }
     & .dark-theme{
       color: ${(props)=>props.DarkTheme};
-      
+      opacity: ${(props)=>props.DarkTheme!=="#FBF8F4"?1:0.3};
     }
 
     & .light-theme{
-      opacity: 0.6;
+      opacity: ${(props)=>props.DarkTheme==="#FBF8F4"?1:0.3};
       color: ${(props)=>props.DarkTheme};
     }
   }

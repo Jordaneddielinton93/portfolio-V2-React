@@ -17,7 +17,9 @@ const Nav = () => {
         <li data-testid="Home">
           <Link to="/">Home</Link>
         </li>
-        <li data-testid="About">About</li>
+        <li data-testid="About">
+          <Link to="/AboutMe"> About </Link> 
+        </li>
         <li data-testid="Projects">Projects</li>
         <li data-testid="Contacts">
           <Link to="/Contact">Contact</Link>

@@ -17,6 +17,7 @@ import { initstialState, reducer } from "../../Reducer/reducer";
 import react from "react";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import Footer from "./Footer/Footer";
+import AboutMePage from "../Pages/AboutMePage/AboutMePage";
 
 
 
@@ -43,6 +44,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/Contact" component={ContactPage} />
+          <Route path="/AboutMe" component={AboutMePage} />
         </Switch>
         
       </Router>

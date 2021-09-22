@@ -15,11 +15,18 @@ export const ThreeColumsIntro = styled.main`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   width: 100%;
   height: 100vh;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column
+  }
 
   & .left-rightcolumns{
     max-height: 80%;
+    @media only screen and (max-width: 550px) {
+      min-width: 80%;
+    }
   }
 
   & .aboutColums{
@@ -29,14 +36,17 @@ export const ThreeColumsIntro = styled.main`
     justify-content: space-evenly;
     width: 31%;
     height: 100%;
-
+  
     & .aboutColums_boxs{
-      width: 80%;
+      width: 70%;
       font-size: 1.8vw;
       & h1{
         padding-bottom: 10px;
         font-style: italic;
         opacity: 0.6;
+      }
+      @media only screen and (max-width: 550px) {
+        font-size: 0.8rem;
       }
       @media only screen and (min-width: 1400px) {
         font-size: 1.8rem;
@@ -47,6 +57,7 @@ export const ThreeColumsIntro = styled.main`
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       font-size: 2rem;
+      text-align: center;
     }
     
     & .aboutColums__imgContainer{
@@ -80,6 +91,7 @@ export const ThreeColumsIntro = styled.main`
     }
     & .aboutColums-title{
       font-size: 4rem;
+      text-align: center;
     }
   }
 
@@ -114,4 +126,8 @@ export const StyledBio = styled.header`
 export const YoutubeArea=styled.div`
   width: 100%;
   height: 800px;
+  display: flex;
+  margin:40px auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 `

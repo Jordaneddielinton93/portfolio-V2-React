@@ -18,6 +18,7 @@ import react from "react";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import Footer from "./Footer/Footer";
 import AboutMePage from "../Pages/AboutMePage/AboutMePage";
+import ProjectPage from "../Pages/ProjectsPage/ProjectPage";
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route path="/Contact" component={ContactPage} />
           <Route path="/AboutMe" component={AboutMePage} />
+          <Route path="/Projects" component={ProjectPage} />
         </Switch>
         
       </Router>

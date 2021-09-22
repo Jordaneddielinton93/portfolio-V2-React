@@ -7,31 +7,7 @@ export const AboutPageStyle = styled.div`
   align-items: center;
   color: ${(props)=>props.DarkTheme};
 ` 
-export const StyledHeader = styled.header`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width:800px;
-    min-height: 300px;
-    border-bottom: ridge thick brown;
-    
-    & .header_title{
-      font-size: 5vw;
-    }
-    & .header_subTitle{
-      font-size: 2vw;
-    }
-    @media only screen and (min-width: 1400px) {
-        & .header_title{
-          font-size: 2rem;
-        }
-        & .header_subTitle{
-          font-size: 1.5rem;
-        }
-    }
 
-`
  
 
 
@@ -56,14 +32,14 @@ export const ThreeColumsIntro = styled.main`
 
     & .aboutColums_boxs{
       width: 80%;
-      font-size: 2vw;
+      font-size: 1.8vw;
       & h1{
         padding-bottom: 10px;
         font-style: italic;
         opacity: 0.6;
       }
       @media only screen and (min-width: 1400px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
 
@@ -87,6 +63,10 @@ export const ThreeColumsIntro = styled.main`
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      opacity: 0.6;
+      &:hover{
+          opacity: 1;
+        }
       & .innerborder{
         width: 100%;
         height: 100%;
@@ -94,12 +74,44 @@ export const ThreeColumsIntro = styled.main`
         border-radius: 180px;
         &:hover{
           border: 8px solid whitesmoke;
-        
-        cursor: pointer;
-
+          cursor: pointer;
         }
       }
     }
+    & .aboutColums-title{
+      font-size: 4rem;
+    }
   }
 
+`
+
+export const StyledBio = styled.header`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width:800px;
+    min-height: 400px;
+    border-bottom: ridge thick brown;
+    
+    & .header_title{
+      font-size: 5vw;
+    }
+    & .header_subTitle{
+      font-size: 2vw;
+    }
+    @media only screen and (min-width: 1400px) {
+        & .header_title{
+          font-size: 2rem;
+        }
+        & .header_subTitle{
+          font-size: 1.5rem;
+        }
+    }
+
+`
+
+export const YoutubeArea=styled.div`
+  width: 100%;
+  height: 800px;
 `

@@ -20,7 +20,9 @@ const Nav = () => {
         <li data-testid="About">
           <Link to="/AboutMe"> About </Link> 
         </li>
-        <li data-testid="Projects">Projects</li>
+        <li data-testid="Projects">
+          <Link to="/Projects">Projects</Link>
+        </li>
         <li data-testid="Contacts">
           <Link to="/Contact">Contact</Link>
         </li>

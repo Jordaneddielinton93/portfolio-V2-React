@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { useEffect, useState } from "react/cjs/react.development";
 import { PageWrapper } from "../../../../App/App";
 import { arrowRightsvg } from "../Images/Arrow";
 import { SliderStyle, SliderWords } from "./Slider.style";

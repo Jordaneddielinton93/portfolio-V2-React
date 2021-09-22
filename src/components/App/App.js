@@ -5,18 +5,17 @@ import Nav from "../Nav/Nav";
 
 
 
-import React, { useEffect, useReducer, useState } from "react";
+import React, {useReducer } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import LandingPage from "../Pages/LandingPage/LandingPage";
 import { initstialState, reducer } from "../../Reducer/reducer";
 import react from "react";
 import ContactPage from "../Pages/ContactPage/ContactPage";
-import Footer from "./Footer/Footer";
+
 import AboutMePage from "../Pages/AboutMePage/AboutMePage";
 import ProjectPage from "../Pages/ProjectsPage/ProjectPage";
 

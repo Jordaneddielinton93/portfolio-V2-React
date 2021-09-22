@@ -17,7 +17,7 @@ export const ThreeColumsIntro = styled.main`
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   @media only screen and (max-width: 550px) {
     flex-direction: column
   }
@@ -112,6 +112,15 @@ export const StyledBio = styled.header`
     & .header_subTitle{
       font-size: 2vw;
     }
+    @media only screen and (max-width: 550px) {
+      width: 90%;
+      & .header_title{
+          font-size: 1rem;
+      }
+      & .header_subTitle{
+          font-size: 0.9rem;
+      }
+    }
     @media only screen and (min-width: 1400px) {
         & .header_title{
           font-size: 2rem;
@@ -125,9 +134,13 @@ export const StyledBio = styled.header`
 
 export const YoutubeArea=styled.div`
   width: 100%;
-  height: 800px;
+  max-width: 1200px;
+  min-height: 800px;
   display: flex;
   margin:40px auto;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 `

@@ -27,7 +27,7 @@ const AboutMePage = () => {
       </ThreeColumsIntro>
 
       <AboutBio/>
-      <h1>
+      <h1 style={{marginTop:"20px"}}>
         I also Make youtube videos  
       </h1>
       <Youtube/>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BrownColor } from "../../../../App/App.style";
 
 export const HeroStyle = styled.main`
   min-height:95vh ;

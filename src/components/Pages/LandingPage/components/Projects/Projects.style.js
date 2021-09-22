@@ -36,14 +36,17 @@ export let ProjectStyle = styled.main`
         text-align: center;
       }
     }
-    & .box_3{
-      
-    }
+  
     @media only screen and (max-width: 750px) {
       & .box_3{
         display: none;
         }
         justify-content: space-evenly;
+    }
+    @media only screen and (max-width: 500px) {
+      & .box_2{
+        display: none;
+      }
     }
          
     

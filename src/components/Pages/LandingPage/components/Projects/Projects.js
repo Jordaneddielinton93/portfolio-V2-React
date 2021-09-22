@@ -25,7 +25,7 @@ const Projects = () => {
       </section>
 
       <section style={{marginTop:"100px"}}
-        className="box">
+        className="box box_2">
          <h1>Gro Pro....</h1>
           <p>Group project 2 was my secound group project learning the basic of React as a team.</p>
           <Phone4/>

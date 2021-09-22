@@ -5,7 +5,34 @@ export const AboutPageStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: ${(props)=>props.DarkTheme};
+` 
+export const StyledHeader = styled.header`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width:800px;
+    min-height: 300px;
+    border-bottom: ridge thick brown;
+    
+    & .header_title{
+      font-size: 5vw;
+    }
+    & .header_subTitle{
+      font-size: 2vw;
+    }
+    @media only screen and (min-width: 1400px) {
+        & .header_title{
+          font-size: 2rem;
+        }
+        & .header_subTitle{
+          font-size: 1.5rem;
+        }
+    }
+
 `
+ 
 
 
 export const ThreeColumsIntro = styled.main`
@@ -14,6 +41,11 @@ export const ThreeColumsIntro = styled.main`
   align-items: center;
   width: 100%;
   height: 100vh;
+
+  & .left-rightcolumns{
+    max-height: 80%;
+  }
+
   & .aboutColums{
     display: flex;
     flex-direction: column;
@@ -21,14 +53,35 @@ export const ThreeColumsIntro = styled.main`
     justify-content: space-evenly;
     width: 31%;
     height: 100%;
+
+    & .aboutColums_boxs{
+      width: 80%;
+      font-size: 2vw;
+      & h1{
+        padding-bottom: 10px;
+        font-style: italic;
+        opacity: 0.6;
+      }
+      @media only screen and (min-width: 1400px) {
+        font-size: 2rem;
+      }
+    }
+
+    & .aboutColums__MidTopColum{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+    }
     
     & .aboutColums__imgContainer{
       display: flex;
       align-items: center;
-      width: 400px;
-      height: 70%;
+      width: 90%;
+      height: 50vw;
+      max-height: 700px;
+      max-width: 400px;
       border-radius: 200px;
-      border:solid 12px black;
+      border:ridge 12px black;
       
       background-image: url(${jordIMG});
       background-repeat: no-repeat;
@@ -37,8 +90,14 @@ export const ThreeColumsIntro = styled.main`
       & .innerborder{
         width: 100%;
         height: 100%;
-        border: 10px solid whitesmoke;
+        border: 5px solid ${(props)=>props.LightTheme};
         border-radius: 180px;
+        &:hover{
+          border: 8px solid whitesmoke;
+        
+        cursor: pointer;
+
+        }
       }
     }
   }

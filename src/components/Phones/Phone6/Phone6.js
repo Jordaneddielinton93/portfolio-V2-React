@@ -4,7 +4,7 @@ import folioV2 from "../images/folioV2.png"
 import folioV3 from "../images/folioV3.png"
 import folioV4 from "../images/folioV4.png"
 
-const Phone5 = () => {
+const Phone6 = () => {
   return ( 
     <PhoneShellStyle>
       <div className="phoneNotch">
@@ -39,4 +39,4 @@ const Phone5 = () => {
    );
 }
 
-export default Phone5;
+export default Phone6;

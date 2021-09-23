@@ -13,6 +13,7 @@ color: ${(props)=>props.DarkTheme};
     border-bottom: thick dotted ${(props)=>props.DarkTheme};
     margin-bottom: 80px;
     align-self: center;
+    text-shadow: rgba(0, 0, 0, 0.24) 2px 3px;
   }
 
   & .main-container{

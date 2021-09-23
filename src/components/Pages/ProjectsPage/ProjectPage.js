@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PageWrapper } from "../../App/App";
+import Footer from "../../App/Footer/Footer";
 import Phone1 from "../../Phones/Phone1/Phone1";
 import Phone2 from "../../Phones/Phone2/Phone2";
 import Phone3 from "../../Phones/Phone3/Phone3";
@@ -35,7 +36,8 @@ const ProjectPage = () => {
           <Phone6/>
           <Phone6/>
         </div>
-        
+
+        <Footer/>
 
       </main>
     </ProjectPageStyled>

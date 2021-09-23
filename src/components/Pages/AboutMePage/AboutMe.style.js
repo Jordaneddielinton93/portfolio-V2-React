@@ -41,6 +41,7 @@ export const ThreeColumsIntro = styled.main`
       width: 70%;
       font-size: 1.8vw;
       & h1{
+        margin-top: 50px;
         padding-bottom: 10px;
         font-style: italic;
         opacity: 0.6;

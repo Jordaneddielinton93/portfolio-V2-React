@@ -96,6 +96,10 @@ export let PhoneShellStyle = styled.div`
     animation: float 6s ease-in-out infinite;
     cursor: pointer;
     border: 5px ridge #FBF8F4;
+
+    & a{
+      color: white;
+    }
     
   @keyframes float {
 	0% {

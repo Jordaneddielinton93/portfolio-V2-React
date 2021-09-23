@@ -1,6 +1,6 @@
 import { PhoneShellStyle } from "../PhoneShell.style";
-import bikeIMG1 from "../images/RoadMap1.png"
-import bikeIMG2 from "../images/RoadMap2.png"
+import RoadIMG1 from "../images/RoadMap1.png"
+import RoadIMG2 from "../images/RoadMap2.png"
 
 const Phone2 = () => {
   return ( 
@@ -12,12 +12,12 @@ const Phone2 = () => {
         <div className="screenSaver">Hover & scroll</div>
         <img style={{marginTop:"20px"}}
         className="bikeIMG1"
-        srcSet={bikeIMG1}
+        srcSet={RoadIMG1}
         alt="bikeimg1" 
         width="100%"/>
 
         <img className="bikeIMG1"
-         srcSet={bikeIMG2}
+         srcSet={RoadIMG2}
          alt="bikeimg2"
          width="100%"/>
 
@@ -25,7 +25,7 @@ const Phone2 = () => {
         
       </div>
       <div className="phoneButton">
-        Visit here
+        <a href="https://web-road-map.netlify.app/" target="_blank" rel="noreferrer">Visit here</a> 
       </div>
     </PhoneShellStyle>
    );

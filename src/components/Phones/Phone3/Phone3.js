@@ -31,7 +31,7 @@ const Phone3 = () => {
         
       </div>
       <div className="phoneButton">
-        Visit here
+        <a href="https://jordansrecipe.netlify.app/"target="_blank" rel="noreferrer">Visit here</a> 
       </div>
     </PhoneShellStyle>
    );

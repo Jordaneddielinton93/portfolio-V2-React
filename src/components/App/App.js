@@ -31,7 +31,7 @@ function App() {
   let [state,dispatch]=useReducer(reducer,initstialState)
 
   
-  console.log(state)
+  
   return (
     <PageWrapper.Provider value={{state,dispatch}}>
     <AppStyled  

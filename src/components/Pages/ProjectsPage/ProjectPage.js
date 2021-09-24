@@ -22,7 +22,8 @@ const ProjectPage = () => {
         MY <br />
         PR<span style={{fontFamily:"Montserrat"}}>O</span>JECTS
       </h1>
-      <main className="main-container">
+      <main className="main-container"> 
+      
         <div className="main-container-top">
           <Phone1/> 
           <Phone2/>

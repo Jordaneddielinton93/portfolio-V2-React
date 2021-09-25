@@ -15,8 +15,6 @@ export const AppStyled = styled.div`
   background-color: ${(props)=>props.colourNaked};
   overflow-y: scroll;
   
-
-
 `
 
 export const BrownColor = "#472425"

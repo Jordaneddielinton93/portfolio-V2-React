@@ -7,6 +7,7 @@ import Phone3 from "../../Phones/Phone3/Phone3";
 import Phone4 from "../../Phones/Phone4/Phone4";
 import Phone5 from "../../Phones/Phone5/Phone5";
 import Phone6 from "../../Phones/Phone6/Phone6";
+import Phone7 from "../../Phones/Phone7/Phone7";
 import { ProjectPageStyled } from "./ProjectPage.styled";
 
 const ProjectPage = () => {
@@ -33,7 +34,7 @@ const ProjectPage = () => {
         
         <div className="main-container-bottom">
           <Phone5/>
-          <Phone6/>
+          <Phone7/>
           <Phone6/>
           <Phone6/>
         </div>

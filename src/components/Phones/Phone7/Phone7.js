@@ -30,7 +30,7 @@ const Phone7 = () => {
         
       </div>
       <div className="phoneButton">
-        <a href="https://jordans-new-portfolio.netlify.app/"
+        <a href="https://visions-of-peace.netlify.app/"
         target="_blank" rel="noreferrer">Visit here</a>
         
       </div>

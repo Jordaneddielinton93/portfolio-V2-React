@@ -28,16 +28,17 @@ const ProjectPage = () => {
       
         <div className="main-container-top">
           <Phone1/> 
+          <Phone8/>
           <Phone2/>
-          <Phone3/>
           <Phone4/>
         </div>
         
         <div className="main-container-bottom">
+          <Phone6/>
           <Phone5/>
           <Phone7/>
-          <Phone8/>
-          <Phone6/>
+          <Phone3/>
+          
         </div>
 
         <Footer/>

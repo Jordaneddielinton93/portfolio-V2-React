@@ -20,7 +20,7 @@ const Projects = () => {
         <p>This was my first client website, built with a team using Firebase Auth,Storage and Realtime database with the React framework.</p>
         <Phone1/>
         <h1>Portfolio v1....</h1>
-        <p>This was my first client website, built with a team using Firebase Auth with React.</p>
+        <p> first website built with react learning the basics of hooks such as useEffect, useState, useReducer mixed with useContext for global state.</p>
         <Phone5/>
       </section>
 

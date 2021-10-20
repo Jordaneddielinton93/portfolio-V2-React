@@ -4,7 +4,7 @@ import bikeIMG2 from "../images/bikeman2.png"
 import bikeIMG3 from "../images/bikeman3.png"
 import bikeIMG4 from "../images/bikeman4.png"
 import bikeIMG5 from "../images/bikeman5.png"
-import { Link } from "react-router-dom";
+
 const Phone1 = () => {
   return ( 
     <PhoneShellStyle>
